@@ -10,9 +10,8 @@ function getGreeting() {
 const texts = [
     getGreeting(),
     "WELCOME TO MY DASHBOARD.",
-    "Fast Rest API.",
-    "Free Endpoint.",
-    "Made by ZikannSenpai."
+    "CEPAT, MUDAH & MURAH.",
+    "MADE BY ZIKASHMIST."
 ];
 let i = 0;
 let j = 0;
