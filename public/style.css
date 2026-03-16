@@ -1,4 +1,11 @@
+html {
+    width: 100%;
+    max-width: 100%;
+}
+
 body {
+    overflow-x: hidden;
+    font-family: "Space Grotesk", system-ui, sans-serif;
     color: #fff;
     background: #0f172a;
     margin-top: 60px;
