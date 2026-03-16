@@ -1,21 +1,19 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  content:[
+  content: [
     "./index.html",
-    "./src/main.js",
+    "./src/**/*.{js,ts,jsx,tsx,html}"
   ],
   theme: {
     extend: {
       colors: {
-        // Skema warna Biru Gelap
-        primary: '#0B1120',    // Background utama paling gelap
-        secondary: '#111827',  // Background kartu/elemen
-        accent: '#3B82F6',     // Biru terang untuk tombol/sorotan
+        primary: "#0B1120",
+        secondary: "#111827",
+        accent: "#3B82F6"
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"]
       }
-    },
+    }
   },
-  plugins:[],
+  plugins: []
 }
