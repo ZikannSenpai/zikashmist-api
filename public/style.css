@@ -62,6 +62,7 @@ body {
     color: #bbb;
     font-weight: bold;
     font-size: 0.8rem;
+    margin-bottom: 20px;
 }
 .btn-box {
     display: grid;
@@ -73,7 +74,7 @@ body {
 
 .btn {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     background: #e5e7eb;
     color: #000;
