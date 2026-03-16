@@ -4,6 +4,100 @@ body {
     margin-top: 60px;
 }
 
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: #020617;
+    transition: 0.3s;
+    z-index: 1000;
+    padding: 20px;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-img-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.nav-line {
+    width: 100%;
+    height: 1px;
+    background: #ffffff30;
+    margin: 10px auto;
+}
+
+.nav-txt {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+.nav-grid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.nav-grid:hover {
+    background: #ffffff10;
+    transform: scale(1.05);
+}
+
+.nav-grid i {
+    font-size: 1.4rem;
+    color: #eee;
+}
+
+.nav-btn {
+    color: #eee;
+    text-decoration: none;
+    font-size: 1rem;
+}
 .header {
     position: fixed;
     top: 0;
@@ -11,6 +105,7 @@ body {
     width: 100%;
     background: #0f172a;
     color: #bbb;
+    border: 1px solid #0f170a;
     text-align: center;
     padding: 15px 0;
     z-index: 999;
@@ -23,6 +118,15 @@ body {
     text-align: center;
 }
 
+.header-title i {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 .container {
     width: 100%;
     max-width: 100%;

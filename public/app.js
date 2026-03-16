@@ -40,3 +40,16 @@ function type() {
 }
 
 type();
+const navBtn = document.getElementById("navBtn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+
+navBtn.onclick = () => {
+    sidebar.classList.add("active");
+    overlay.classList.add("active");
+};
+
+overlay.onclick = () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+};
