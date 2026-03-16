@@ -11,8 +11,9 @@
             content="API Zikan, Zikan Neko, API Gratis Indonesia, API Anime Indonesia, API Komik Gratis, API Manga, REST API Gratis, API Anime Otakudesu, API Samehadaku, API Komiku, API BacaKomik, WhatsApp Bot API, API Developer Indonesia, Free REST API, API Manhwa, API Manhua, API Novel, Downloader Anime API, Web Tools API, API Indonesia, Zikan API, Zikan API, API Gratis Terlengkap, API Anime Sub Indo, API Komik Indonesia, Bot WhatsApp Indonesia, API untuk Developer, Free API Service, API Documentation Indonesia"
         />
 
-        <title>ZikaNeko - Free Rest API | Dashboard</title>
-        <meta property="og:title" content="ZikaNeko - Free Rest API" />
+        <title>ZikAshmist - Free Rest API | Dashboard</title>
+        <meta property="og:title" content="ZikAshmist - Free Rest API" />
+        <link rel="stylesheet" href="style.css" />
         <meta
             property="og:description"
             content="Layanan API gratis dan andal untuk developer. Dibangun dengan Node.js dan TypeScript dengan endpoint stabil dan integrasi mudah."
@@ -49,8 +50,30 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            mono: ['"JetBrains Mono"', "monospace"],
+                            display: ['"Space Grotesk"', "sans-serif"],
+                            normal: ["ui-sans-serif", "system-ui", "sans-serif"]
+                        }
+                    }
+                }
+            };
+        </script>
     </head>
     <body>
-        Coming Soon!
+        <div class="header font-normal">
+            <div class="header-title">Dashboard API</div>
+        </div>
+        <div class="container">
+            <div class="typing">
+                <span id="type">-</span>
+                <span class="cursor">|</span>
+            </div>
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>
