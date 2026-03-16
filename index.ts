@@ -12,7 +12,6 @@ app.use(express.static(path.join(process.cwd(), "public")));
 app.use(express.static("public"));
 
 app.get("/", (req: Request, res: Response) => {
-    incrementVisitor();
     res.sendFile(path.join(process.cwd(), "public", "landing.html"));
 });
 
