@@ -63,3 +63,31 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
+.btn-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #e5e7eb;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #e5e7eb;
+    color: #fff;
+}
