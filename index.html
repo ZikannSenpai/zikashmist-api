@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZikAshmist API - Fast & Reliable</title>
+</head>
+<body class="bg-primary text-white font-sans overflow-x-hidden selection:bg-accent selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-primary/90 backdrop-blur-md border-b border-gray-800 animate-entry">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-wider text-white">
+        ZikAshmist <span class="text-accent">API</span>
+      </div>
+      <div class="hidden md:flex space-x-8 text-gray-300 font-medium">
+        <a href="#beranda" class="hover:text-white transition">Beranda</a>
+        <a href="#fitur" class="hover:text-white transition">Fitur</a>
+        <a href="#dokumentasi" class="hover:text-white transition">Dokumentasi</a>
+      </div>
+      <!-- Tombol dengan efek Zoom In/Out saat hover/klik -->
+      <a href="#" class="px-6 py-2 bg-white text-primary font-bold rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)] active:scale-90">
+        Get Started
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="min-h-screen flex items-center justify-center pt-20 animate-entry">
+    <div class="text-center max-w-4xl px-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+        Bangun Aplikasi Skala Besar dengan <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white">ZikAshmist</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+        REST API super cepat, aman, dan mudah diintegrasikan. Didesain untuk developer modern yang membutuhkan performa tanpa kompromi.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <!-- Efek Zoom In & Out -->
+        <button class="px-8 py-4 bg-accent text-white font-bold rounded-lg transition-transform duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-accent/30">
+          Baca Dokumentasi
+        </button>
+        <button class="px-8 py-4 bg-secondary text-white font-bold border border-gray-700 rounded-lg transition-transform duration-300 hover:scale-105 active:scale-95 hover:bg-gray-800">
+          Lihat Pricing
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="fitur" class="py-24 bg-primary relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4 text-white">Mengapa Memilih Kami?</h2>
+        <p class="text-gray-400">Infrastruktur unggulan untuk kebutuhan data Anda.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Kolom Fitur 1 (Scroll Reveal & Zoom Hover/Active) -->
+        <div class="reveal bg-secondary p-8 rounded-2xl border border-gray-800 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:scale-105 active:scale-95 hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)] hover:border-accent">
+          <div class="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 text-accent text-2xl font-bold">🚀</div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Super Cepat</h3>
+          <p class="text-gray-400">Response time di bawah 50ms berkat server edge global kami dan optimasi database tingkat tinggi.</p>
+        </div>
+
+        <!-- Kolom Fitur 2 -->
+        <div class="reveal bg-secondary p-8 rounded-2xl border border-gray-800 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:scale-105 active:scale-95 hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)] hover:border-accent" style="transition-delay: 100ms;">
+          <div class="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 text-accent text-2xl font-bold">🔒</div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Keamanan Maksimal</h3>
+          <p class="text-gray-400">Dilengkapi dengan enkripsi end-to-end, proteksi DDoS, dan autentikasi JWT modern.</p>
+        </div>
+
+        <!-- Kolom Fitur 3 -->
+        <div class="reveal bg-secondary p-8 rounded-2xl border border-gray-800 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:scale-105 active:scale-95 hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)] hover:border-accent" style="transition-delay: 200ms;">
+          <div class="w-14 h-14 bg-blue-900/50 rounded-xl flex items-center justify-center mb-6 text-accent text-2xl font-bold">📚</div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Dokumentasi Jelas</h3>
+          <p class="text-gray-400">Panduan interaktif dan SDK untuk berbagai bahasa pemrograman memudahkan integrasi Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Snippet / Endpoint Section -->
+  <section id="dokumentasi" class="py-24 bg-secondary border-t border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/2 reveal">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Integrasi Hanya Dalam Hitungan Detik</h2>
+        <p class="text-gray-400 text-lg mb-8">
+          Hanya butuh satu baris kode untuk mulai menarik data dari ZikAshmist API. Coba jalankan cURL ini di terminal Anda.
+        </p>
+        <button class="px-6 py-3 bg-white text-primary font-bold rounded-lg transition-transform duration-300 hover:scale-110 active:scale-90">
+          Dapatkan API Key Gratis
+        </button>
+      </div>
+      
+      <div class="w-full md:w-1/2 reveal">
+        <!-- Mockup Terminal Beranimasi (Zoom Hover) -->
+        <div class="bg-[#050B14] rounded-xl p-6 border border-gray-800 shadow-2xl font-mono text-sm transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer">
+          <div class="flex space-x-2 mb-4">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+          <div class="text-gray-300">
+            <span class="text-accent">curl</span> -X GET "https://api.zikashmist.com/v1/users" \<br>
+            &nbsp;&nbsp;-H <span class="text-green-400">"Authorization: Bearer YOUR_API_KEY"</span>
+          </div>
+          <div class="mt-4 text-gray-500">
+            // Response JSON
+          </div>
+          <div class="text-gray-300">
+            {<br>
+            &nbsp;&nbsp;<span class="text-accent">"status"</span>: <span class="text-green-400">200</span>,<br>
+            &nbsp;&nbsp;<span class="text-accent">"message"</span>: <span class="text-green-400">"Success"</span>,<br>
+            &nbsp;&nbsp;<span class="text-accent">"data"</span>:[<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-accent">"id"</span>: <span class="text-yellow-400">1</span>, <span class="text-accent">"name"</span>: <span class="text-green-400">"ZikAshmist User"</span> }<br>
+            &nbsp;&nbsp;]<br>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary py-12 text-center text-gray-500 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-2xl font-bold tracking-wider text-white mb-4">
+        ZikAshmist <span class="text-accent">API</span>
+      </div>
+      <p class="mb-6">&copy; 2026 ZikAshmist Technologies. All rights reserved.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="#" class="hover:text-white transition-transform hover:scale-125 duration-300 active:scale-90">Twitter</a>
+        <a href="#" class="hover:text-white transition-transform hover:scale-125 duration-300 active:scale-90">GitHub</a>
+        <a href="#" class="hover:text-white transition-transform hover:scale-125 duration-300 active:scale-90">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
