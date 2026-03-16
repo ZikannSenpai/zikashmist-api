@@ -1,10 +1,19 @@
+function getGreeting() {
+    const hour = new Date().getHours();
+
+    if (hour >= 4 && hour < 11) return "HALO, SELAMAT PAGI.";
+    if (hour >= 11 && hour < 15) return "HALO, SELAMAT SIANG.";
+    if (hour >= 15 && hour < 18) return "HALO, SELAMAT SORE.";
+    return "HALO, SELAMAT MALAM.";
+}
+
 const texts = [
+    getGreeting(),
     "WELCOME TO MY DASHBOARD.",
     "Fast Rest API.",
     "Free Endpoint.",
     "Made by ZikannSenpai."
 ];
-
 let i = 0;
 let j = 0;
 let isDeleting = false;
